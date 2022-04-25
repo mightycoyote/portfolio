@@ -1,5 +1,21 @@
+@use "sass:color";
+
 $colors: ('primary': hsl(234, 75%, 67%),
     'secondary': hsl(306, 75%, 67%),
     'accent': hsl(90, 75%, 67%),
     'tertiary': hsl(234, 75%, 27%),
 );
+
+
+:root {
+
+
+    @each $colorName,
+    $colorValue in $colors {
+        --#{$colorName}: #{$colorValue};
+        --#{$colorName}-light: #{color.scale($colorValue, $lightness: 20%)};
+        --#{$colorName}-dark: #{color.scale($colorValue, $lightness: -20%)};
+
+    }
+
+}

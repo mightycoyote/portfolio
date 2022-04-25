@@ -53,12 +53,27 @@ h6 {
   isolation: isolate;
 }
 
+:root {
+  --primary: hsl(234deg, 75%, 67%);
+  --primary-light: #8993ee;
+  --primary-dark: #3042e1;
+  --secondary: hsl(306deg, 75%, 67%);
+  --secondary-light: #ee89e4;
+  --secondary-dark: #e130d0;
+  --accent: hsl(90deg, 75%, 67%);
+  --accent-light: #bcee89;
+  --accent-dark: #89e130;
+  --tertiary: hsl(234deg, 75%, 27%);
+  --tertiary-light: #1b2aba;
+  --tertiary-dark: #0e1660;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: hsl(306deg, 75%, 67%);
+  color: var(--secondary);
   margin-top: 60px;
 }
 
