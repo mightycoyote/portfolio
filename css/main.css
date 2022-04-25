@@ -53,6 +53,17 @@ h6 {
   isolation: isolate;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Righteous", cursive;
+}
+
+h1 {
+  color: var(--secondary-dark);
+}
+
 :root {
   --primary: hsl(234deg, 75%, 67%);
   --primary-light: #8993ee;
@@ -68,13 +79,18 @@ h6 {
   --tertiary-dark: #0e1660;
 }
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: var(--secondary);
-  margin-top: 60px;
+.company {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 25vh;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
