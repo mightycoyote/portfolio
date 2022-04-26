@@ -56,27 +56,15 @@ h6 {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   font-family: "Righteous", cursive;
+  color: hsl(234deg, 75%, 67%);
 }
 
-h1 {
-  color: var(--secondary-dark);
-}
-
-:root {
-  --primary: hsl(234deg, 75%, 67%);
-  --primary-light: #8993ee;
-  --primary-dark: #3042e1;
-  --secondary: hsl(306deg, 75%, 67%);
-  --secondary-light: #ee89e4;
-  --secondary-dark: #e130d0;
-  --accent: hsl(90deg, 75%, 67%);
-  --accent-light: #bcee89;
-  --accent-dark: #89e130;
-  --tertiary: hsl(234deg, 75%, 27%);
-  --tertiary-light: #1b2aba;
-  --tertiary-dark: #0e1660;
+body {
+  font-family: "Cormorant Garamond", serif;
 }
 
 .company {
@@ -85,12 +73,31 @@ h1 {
   justify-content: center;
   padding: 1rem;
 }
+.company .span-1 {
+  color: #e130d0;
+}
+.company .span-2 {
+  color: hsl(234deg, 75%, 67%);
+}
 
 .header {
   display: flex;
   flex-direction: column;
-  height: 25vh;
+  height: 40vh;
   justify-content: center;
+  background-image: url("https://placeimg.com/800/600/arch");
+  background-color: hsl(234deg, 75%, 27%);
+  background-blend-mode: darken;
+  background-size: cover;
+  border-bottom: 3px solid hsl(90deg, 75%, 67%);
+}
+
+.quoteblock {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 5rem;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -5,7 +5,11 @@
 
     display: flex;
     flex-direction: column;
-    height: 25vh;
+    height: 40vh;
     justify-content: center;
-
+    background-image: url('https://placeimg.com/800/600/arch');
+    background-color: base.$header-background;
+    background-blend-mode: darken;
+    background-size: cover;
+    border-bottom: 3px solid base.$accent;
 }

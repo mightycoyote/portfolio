@@ -1,8 +1,17 @@
 @use '../base';
 
 .company {
+
     display: flex;
     gap: .5rem;
     justify-content: center;
     padding: 1rem;
+
+    & .span-1 {
+        color: base.$secondary-dark;
+    }
+
+    & .span-2 {
+        color: base.$primary;
+    }
 }

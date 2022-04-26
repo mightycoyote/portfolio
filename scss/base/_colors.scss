@@ -1,21 +1,52 @@
 @use "sass:color";
+@use "sass:map";
 
-$colors: ('primary': hsl(234, 75%, 67%),
-    'secondary': hsl(306, 75%, 67%),
-    'accent': hsl(90, 75%, 67%),
-    'tertiary': hsl(234, 75%, 27%),
+$colors: (primary: hsl(234, 75%, 67%),
+    secondary: hsl(306, 75%, 67%),
+    accent: hsl(90, 75%, 67%),
+    tertiary: hsl(234, 75%, 27%),
 );
 
+// colors and variations
 
-:root {
+$primary: map.get($colors, primary);
+$primary-light: color.scale($primary, $lightness: 20%);
+$primary-dark: color.scale($primary, $lightness: -20%);
+
+$secondary: map.get($colors, secondary);
+$secondary-light: color.scale($secondary, $lightness: 20%);
+$secondary-dark: color.scale($secondary, $lightness: -20%);
+
+$accent: map.get($colors, accent);
+$accent-light: color.scale($accent, $lightness: 20%);
+$accent-dark: color.scale($accent, $lightness: -20%);
+
+$tertiary: map.get($colors, tertiary);
+$tertiary-light: color.scale($tertiary, $lightness: 20%);
+$tertiary-dark: color.scale($tertiary, $lightness: -20%);
+
+// design tokens
+
+$heading-color: $primary;
+$header-background: $tertiary;
 
 
-    @each $colorName,
-    $colorValue in $colors {
-        --#{$colorName}: #{$colorValue};
-        --#{$colorName}-light: #{color.scale($colorValue, $lightness: 20%)};
-        --#{$colorName}-dark: #{color.scale($colorValue, $lightness: -20%)};
+// @each $colorName,
+// $colorValue in $colors {
+//     .#{colorName} {
+//         color: $colorValue;
+//     }
+// }
 
-    }
+// :root {
 
-}
+
+//     @each $colorName,
+//     $colorValue in $colors {
+//         --#{$colorName}: #{$colorValue};
+//         --#{$colorName}-light: #{color.scale($colorValue, $lightness: 20%)};
+//         --#{$colorName}-dark: #{color.scale($colorValue, $lightness: -20%)};
+
+//     }
+
+// }
