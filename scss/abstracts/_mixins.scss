@@ -1,0 +1,5 @@
+@use '../base';
+
+@mixin drop-shadow {
+    filter: drop-shadow(6px 6px base.$accent);
+}

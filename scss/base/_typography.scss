@@ -4,6 +4,8 @@ $display-font: 'Righteous',
 cursive;
 $text-font: 'Cormorant Garamond',
 serif;
+$sanserif: 'Radio Canada',
+sans-serif;
 
 h1,
 h2,
@@ -17,4 +19,14 @@ h6 {
 
 body {
     font-family: $text-font;
+}
+
+blockquote {
+    font-family: $text-font;
+    font-size: 1.5rem;
+}
+
+figcaption {
+    font-family: $sanserif;
+    font-size: .8rem;
 }

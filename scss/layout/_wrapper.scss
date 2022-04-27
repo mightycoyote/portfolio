@@ -1,0 +1,10 @@
+@use '../base';
+
+#app {
+    background-color: base.$background;
+}
+
+.wrapper {
+    max-width: base.$max;
+    margin: 0 auto;
+}

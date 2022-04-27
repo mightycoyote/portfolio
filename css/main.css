@@ -67,6 +67,16 @@ body {
   font-family: "Cormorant Garamond", serif;
 }
 
+blockquote {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+}
+
+figcaption {
+  font-family: "Radio Canada", sans-serif;
+  font-size: 0.8rem;
+}
+
 .company {
   display: flex;
   gap: 0.5rem;
@@ -93,11 +103,39 @@ body {
 }
 
 .quoteblock {
-  color: white;
-  background-color: black;
-  text-align: center;
+  background-color: #8993ee;
   padding: 5rem;
-  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.quoteblock img {
+  filter: drop-shadow(6px 6px hsl(90deg, 75%, 67%));
+  margin: auto;
+}
+.quoteblock :last-child {
+  align-self: center;
+}
+.quoteblock > * {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .quoteblock {
+    flex-direction: row-reverse;
+  }
+  .quoteblock img {
+    margin: 0;
+  }
+}
+
+#app {
+  background-color: hsl(234deg, 75%, 90%);
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */
