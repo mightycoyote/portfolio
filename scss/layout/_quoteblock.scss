@@ -4,7 +4,7 @@
 .quoteblock {
 
     background-color: base.$primary-light;
-    padding: 5rem;
+    padding: 2rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -13,10 +13,13 @@
 
     & img {
         @include abstracts.drop-shadow;
+        object-fit: contain;
         margin: auto;
+        width: 40vw;
+
     }
 
-    & :last-child {
+    & .quote {
         align-self: center;
     }
 
@@ -25,14 +28,22 @@
         width: 100%;
     }
 
+    // @media (min-width: base.$sm) {
+    //     & img {
+    //         width: 40vw;
+    //     }
+    // }
+
     @media (min-width: base.$med) {
 
         flex-direction: row-reverse;
+        padding: 5rem;
 
         & img {
             margin: 0;
+            width: 20vw;
+            max-height: 40vh;
         }
-
 
     }
 }
