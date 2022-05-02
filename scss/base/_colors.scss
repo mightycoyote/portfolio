@@ -12,10 +12,14 @@ $colors: (primary: hsl(234, 75%, 67%),
 $primary: map.get($colors, primary);
 $primary-light: color.scale($primary, $lightness: 20%);
 $primary-dark: color.scale($primary, $lightness: -20%);
+$primary-verydark: color.scale($primary, $lightness: -45%);
+
 
 $secondary: map.get($colors, secondary);
 $secondary-light: color.scale($secondary, $lightness: 20%);
 $secondary-dark: color.scale($secondary, $lightness: -20%);
+$secondary-verydark: color.scale($secondary, $lightness: -30%);
+
 
 $accent: map.get($colors, accent);
 $accent-light: color.scale($accent, $lightness: 20%);
@@ -23,12 +27,20 @@ $accent-dark: color.scale($accent, $lightness: -20%);
 
 $tertiary: map.get($colors, tertiary);
 $tertiary-light: color.scale($tertiary, $lightness: 20%);
+$tertiary-verylight: color.scale($tertiary, $lightness: 40%);
 $tertiary-dark: color.scale($tertiary, $lightness: -20%);
+
+
+$background-p: hsl(234, 75%, 90%);
+$background-s: hsl(306, 75%, 98%);
+$background-t: hsl(234, 75%, 90%);
+
+$light-text: hsl(234, 75%, 95%);
+$dark-text: hsl(234, 75%, 20%);
 
 // design tokens
 
-$background: hsl(234, 75%, 90%);
-$heading-color: $primary;
+$heading-color: $primary-verydark;
 $header-background: $tertiary;
 
 

@@ -1,0 +1,13 @@
+@use '../base';
+
+
+.footer {
+    background-color: base.$header-background;
+    text-align: center;
+    color: base.$light-text;
+    padding: 1.5rem;
+
+    & a {
+        color: inherit;
+    }
+}

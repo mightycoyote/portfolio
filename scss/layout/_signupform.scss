@@ -1,0 +1,16 @@
+@use '../base';
+
+.signupform {
+    background-color: base.$primary-light;
+    padding: 2rem;
+
+    & .center {
+        max-width: base.$lg;
+    }
+
+    @media (min-width: base.$med) {
+        display: flex;
+        justify-content: center;
+
+    }
+}

@@ -3,7 +3,8 @@
 
 .quoteblock {
 
-    background-color: base.$primary-light;
+    background-color: base.$primary-verydark;
+    color: base.$light-text;
     padding: 2rem;
     text-align: center;
     display: flex;
@@ -15,7 +16,7 @@
         @include abstracts.drop-shadow;
         object-fit: contain;
         margin: auto;
-        width: 40vw;
+        width: 30vw;
 
     }
 
@@ -24,25 +25,18 @@
     }
 
     &>* {
-        // margin: auto;
         width: 100%;
     }
 
-    // @media (min-width: base.$sm) {
-    //     & img {
-    //         width: 40vw;
-    //     }
-    // }
-
-    @media (min-width: base.$med) {
+    @media (min-width: base.$sm) {
 
         flex-direction: row-reverse;
         padding: 5rem;
 
         & img {
             margin: 0;
-            width: 20vw;
-            max-height: 40vh;
+            width: 30vw;
+            max-height: 30vh;
         }
 
     }

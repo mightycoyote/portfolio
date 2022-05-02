@@ -1,0 +1,28 @@
+@use '../base';
+
+.textblock {
+
+    background-color: base.$background-s;
+    padding: 2rem;
+    color: base.$dark-text;
+
+    & h2 {
+        color: base.$secondary-dark;
+        padding: .5rem;
+    }
+
+    @media (min-width: base.$med) {
+        display: flex;
+        justify-content: center;
+        padding: 5rem 2rem;
+
+
+        & .center {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            border-left: 2px solid base.$accent;
+            border-right: 2px solid base.$accent;
+
+        }
+    }
+}

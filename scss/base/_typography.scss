@@ -32,18 +32,19 @@ h1 {
 
 body {
     font-family: $text-font;
+    color: colors.$dark-text;
 }
 
-blockquote {
+.quote {
     font-family: $text-font;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 
-    @media (min-width: breakpoints.$lg) {
-        font-size: 2rem;
+    @media (min-width: breakpoints.$med) {
+        font-size: 1.5rem;
     }
 }
 
-figcaption {
+.caption {
     font-family: $sanserif;
     font-size: .8rem;
 }
