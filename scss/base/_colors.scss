@@ -43,6 +43,10 @@ $dark-text: hsl(234, 75%, 20%);
 $heading-color: $primary-verydark;
 $header-background: $tertiary;
 
+$link-dark: $primary-dark;
+$link-visited-dark: $secondary-dark;
+$link-light: $primary-light;
+$link-visited-light: $secondary-light;
 
 // @each $colorName,
 // $colorValue in $colors {

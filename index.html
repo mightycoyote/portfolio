@@ -17,12 +17,23 @@
 <body>
   <div id="app">
     <!-- full-width header -->
+
     <div class="header">
       <div class="company">
         <img src="./images/logoipsum-logo-alt.svg">
         <h1><span class="span-1">Fake</span><span class="span-2">Co.</span></h1>
       </div>
     </div>
+    <nav class="navhoriz">
+      <ul>
+        <li><a href="#signup">Sign up</a></li>
+        <li><a href="">Placeholder</a></li>
+        <li><a href="">Placeholder</a></li>
+        <li><a href="">Placeholder</a></li>
+        <li><a href="">Placeholder</a></li>
+
+      </ul>
+    </nav>
     <!-- begin wrapper w/ max content width -->
     <div class="wrapper">
       <div class="quoteblock">
@@ -40,13 +51,15 @@
         <div class="center">
           <h2>Things you can do here</h2>
           <ul>
-            <li>Check out this signup form (it's only a demo, and doesn't collect anything you enter)</li>
-            <li>Review the image gallery</li>
-            <li>View the source code for this page on Github</li>
+            <li>Check out this <a href="#signup">signup form</a> (it's only a demo, and doesn't collect anything you
+              enter)</li>
+            <!-- <li>Review the image gallery</li> -->
+            <li>View the <a href="https://github.com/mightycoyote/portfolio">source code</a> for this page on Github
+            </li>
           </ul>
         </div>
       </div>
-      <div class="signupform">
+      <div class="signupform" id="signup">
         <div class="center">
           <h2>Sign up!</h2>
           <form>

@@ -77,9 +77,25 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
 body {
   font-family: "Cormorant Garamond", serif;
   color: hsl(234deg, 75%, 20%);
+}
+
+a {
+  color: #3042e1;
+}
+a:visited {
+  color: #e130d0;
 }
 
 .quote {
@@ -199,7 +215,7 @@ body {
 
 .signupform {
   background-color: #8993ee;
-  padding: 2rem;
+  padding: 3rem 0;
 }
 .signupform .center {
   max-width: 1070px;
@@ -208,6 +224,45 @@ body {
   .signupform {
     display: flex;
     justify-content: center;
+  }
+}
+
+.navhoriz {
+  background-color: black;
+  color: hsl(234deg, 75%, 95%);
+  text-align: center;
+  font-family: "Radio Canada", sans-serif;
+}
+.navhoriz a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #8993ee;
+}
+.navhoriz a:visited {
+  color: #ee89e4;
+}
+.navhoriz ul {
+  padding: 1.5rem 0;
+}
+.navhoriz ul li {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0.2rem;
+  margin: 0;
+}
+@media (min-width: 640px) {
+  .navhoriz ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .navhoriz ul li {
+    padding: 0 1rem;
+    border-right: 1px solid hsl(90deg, 75%, 67%);
+  }
+  .navhoriz ul li:last-child {
+    border-right: none;
   }
 }
 

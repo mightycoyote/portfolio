@@ -30,9 +30,29 @@ h1 {
     }
 }
 
+h2 {
+    font-size: 1.5rem;
+
+    @media (min-width: breakpoints.$med) {
+        font-size: 2rem;
+    }
+
+    // @media (min-width: breakpoints.$lg) {
+    //     font-size: 3rem;
+    // }
+}
+
 body {
     font-family: $text-font;
     color: colors.$dark-text;
+}
+
+a {
+    color: colors.$link-dark;
+
+    &:visited {
+        color: colors.$link-visited-dark;
+    }
 }
 
 .quote {
