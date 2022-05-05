@@ -2,15 +2,79 @@
 
 .signupform {
     background-color: base.$primary-light;
-    padding: 3rem 0;
+    padding: 3rem 1rem;
 
     & .center {
         max-width: base.$lg;
     }
 
+    // & form {
+    //     display: grid;
+    //     grid-template-columns: 20% 80%;
+    // }
+
+    // & form {
+    //     &>* {
+    //         display: flex;
+    //     }
+    // }
+
     @media (min-width: base.$med) {
         display: flex;
         justify-content: center;
 
+        & form {
+            grid-template-columns: 25% 25% 25% 25%;
+
+        }
+
+    }
+}
+
+@media (min-width: base.$sm) {
+
+    .fname {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .lname {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .street {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .city {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .state {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .zip {
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+
+    .email {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .subscribe {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .formsubmit {
+        grid-column-start: 2;
+        grid-column-end: 4;
     }
 }

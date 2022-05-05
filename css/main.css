@@ -215,7 +215,7 @@ a:visited {
 
 .signupform {
   background-color: #8993ee;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
 }
 .signupform .center {
   max-width: 1070px;
@@ -225,8 +225,57 @@ a:visited {
     display: flex;
     justify-content: center;
   }
+  .signupform form {
+    grid-template-columns: 25% 25% 25% 25%;
+  }
 }
 
+@media (min-width: 640px) {
+  .fname {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .lname {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .street {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .city {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .state {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .zip {
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+
+  .email {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .subscribe {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .formsubmit {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}
 .navhoriz {
   background-color: black;
   color: hsl(234deg, 75%, 95%);
